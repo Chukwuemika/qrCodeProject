@@ -1,0 +1,37 @@
+
+  
+.Container{
+  display: flex;
+}
+
+.Container > div {
+  border:#ccc;
+  padding: 50px;
+}
+.Container > div {
+  border: 50px solid rgb(143, 167, 143);
+  padding: 100px;
+  height: calc(100vh - 100px)
+  /*the above is to make the container fill up all space*/
+}
+ .Column1 {
+  flex: 1;
+}
+/* I made use of one column for all components instead*/
+.Column1{
+  color: #ffffff; /*text colour*/ 
+  height:200px;
+  font-size:30pt;
+  justify-content: center;
+  /*background-image: url(./componenets/image/pic2.jpeg);
+  /*This is my image link*/
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+
+}
+@media (max-width: 768px){
+  .Container{
+      flex-direction: column;
+  }
+}
